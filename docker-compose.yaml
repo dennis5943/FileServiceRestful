@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  server:
+    build: ./server
+    image: fileservice
+    ports:
+      - 8006:80
+    volumes:
+      - ./server:/app
